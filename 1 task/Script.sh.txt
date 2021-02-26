@@ -1,0 +1,23 @@
+#!/bin/bash
+first= $[ ( $RANDOM % 10 ) + 1 ] #Get firts rand number
+array=("$first") # reate an array
+a=${#array[@]} #Count array indexes
+until [ $a -eq 11 ]
+do
+number=$[ ( $RANDOM % 10 )  + 1 ]
+  if [[ ! " ${array[@]} " =~ " ${number} " ]]; then #check if tehre a new numer in array
+    array+=("$number") #add number to array
+    new_a=${#array[@]}
+    a=$new_a
+  fi
+done
+echo  "new array is" ${array[@]} #print new array 
+
+#or jus use shuf -i 1-10 =)
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+For manual method you can use utilites like
+System Monitor
+Htop
+Wireshark 
+And log files 
+
+You need to check prameters like processor load an d temperature, Mem load , Network flow and network load and reliabilty,
+Number of connections and etc. But it's all about the tasks that you have at the moment.
